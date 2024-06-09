@@ -7,7 +7,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchEnquiries = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/enquiries');
+                const response = await axios.get('https://backend1-51bd.onrender.com/enquiries');
                 setEnquiries(response.data);
             } catch (error) {
                 console.error('Error fetching enquiries:', error);

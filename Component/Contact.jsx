@@ -13,7 +13,7 @@ export default function Contact() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/contact', {
+            const response = await axios.post('https://backend1-51bd.onrender.com/contact', {
                 firstName: Fname,
                 lastName: Lname,
                 email: Email,

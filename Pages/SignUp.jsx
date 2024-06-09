@@ -19,7 +19,7 @@ export default function SignUp() {
         }
 
         try {
-            await axios.post('http://localhost:5000/signUp', { email, password }).then(res=>
+            await axios.post('https://backend1-51bd.onrender.com/signUp', { email, password }).then(res=>
                 {
                     if (res.data == "Exist") {
                         alert("Email already in use !!!")
